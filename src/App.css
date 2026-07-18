@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5eee6;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  max-width: 850px;
+  margin: 40px auto;
+  background: #fffdf9;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #7b5e57;
+  margin-bottom: 25px;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.card {
+  flex: 1;
+  background: #ede0d4;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card h2 {
+  color: #7b5e57;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.input-box button {
+  padding: 15px 25px;
+  border: none;
+  background: #a98467;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.filters button {
+  padding: 10px 18px;
+  border: none;
+  background: #ede0d4;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #faf6f1;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.btns button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #d6ccc2;
+  cursor: pointer;
+}
+
+.clear {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  background: #7b5e57;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.empty {
+  text-align: center;
+  color: #7b5e57;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+  }
+
+  .input-box {
+    flex-direction: column;
+  }
+
+  .task-card {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
